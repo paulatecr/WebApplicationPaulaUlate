@@ -19,7 +19,7 @@
 
         $.ajax({
             type: "POST",
-            url: "Default.aspx/GuardarDatos",
+            url: "https://localhost:44300/Default.aspx/GuardarDatos",
             data: JSON.stringify({ nombre: nombre, correo: correo }),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
