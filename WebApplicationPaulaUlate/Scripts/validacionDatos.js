@@ -19,10 +19,14 @@
 
         $.ajax({
             type: "POST",
+            //url: "https://localhost:44300/Default.aspx/GuardarDatos",
             url: "Default.aspx/GuardarDatos",
             data: JSON.stringify({ nombre: nombre, correo: correo }),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
+            //xhrFields: {
+             //   withCredentials: true
+           // },
             success: function (response) {
                 $("#datoTabla").html(response.d);
                 $("#txtNombre").val("");

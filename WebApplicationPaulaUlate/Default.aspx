@@ -6,7 +6,7 @@
     <title>Formulario Electrónico</title>
     <link href="Content/Style.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="Scripts/validacionDatos.js"></script>
+    <script src="/Scripts/validacionDatos.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">

@@ -1,17 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Web.Script.Services;
 using System.Web.Services;
 using System.Web.UI;
 
 
 namespace WebApplicationPaulaUlate
 {
+    [ScriptService]
     public partial class Default : Page
     {
         static List<string[]> datos = new List<string[]>();
 
         [WebMethod]
         [System.Web.Script.Services.ScriptMethod]
+
         public static string GuardarDatos(string nombre, string correo)
         {
             datos.Add(new string[] { nombre, correo });
