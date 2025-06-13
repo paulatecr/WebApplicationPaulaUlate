@@ -19,7 +19,7 @@
 
         $.ajax({
             type: "POST",
-            url: "https://localhost:44300/Default.aspx/GuardarDatos",
+            url: "Default.aspx/GuardarDatos",
             data: JSON.stringify({ nombre: nombre, correo: correo }),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
@@ -28,8 +28,7 @@
                 $("#txtNombre").val("");
                 $("#txtCorreo").val("");
             },
-            error: function (xhr, status, error) {
-                console.error("Error AJAX:", xhr.responseText);
+            error: function (xhr, status, error) {          
                 alert("Error al Enviar Datos");
             },
             complete: function () {
