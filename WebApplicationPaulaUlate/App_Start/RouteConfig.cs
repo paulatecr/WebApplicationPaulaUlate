@@ -11,7 +11,7 @@ namespace WebApplicationPaulaUlate
         public static void RegisterRoutes(RouteCollection routes)
         {
             var settings = new FriendlyUrlSettings();
-            settings.AutoRedirectMode = RedirectMode.Permanent;
+            settings.AutoRedirectMode = RedirectMode.Off;//From Permanent to Off and Error 401 was fixed
             routes.EnableFriendlyUrls(settings);
         }
     }

@@ -12,8 +12,8 @@ namespace WebApplicationPaulaUlate
     {
         static List<string[]> datos = new List<string[]>();
 
-        [WebMethod]
-        [System.Web.Script.Services.ScriptMethod]
+       // [WebMethod]
+        [System.Web.Services.WebMethod]
 
         public static string GuardarDatos(string nombre, string correo)
         {
